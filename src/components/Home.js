@@ -13,7 +13,7 @@ function Home() {
                 </ul>
             </nav>
             <section id="about">
-                <img src={pooja} alt="pooja" id="home-image"/> {/* Correct usage of the image path */}
+                <img src={pooja} alt="pooja" id="home-image"/> 
                 <p>This is the About section.</p>
             </section>
             <section id="blogs">

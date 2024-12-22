@@ -30,7 +30,12 @@ section {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     color: black;
+   
+   
 }
+
+
+
 
 .button-92 {
     --c: #fff;
@@ -67,7 +72,7 @@ section {
     margin: 0;
     cursor: pointer;
     padding: 10%;
-    color: rgb(94, 11, 97);
+    color:#d8cae2c4;
 }
 
 @media (max-width: 768px) {
@@ -84,6 +89,7 @@ section {
 
     #contact #contact-form {
         width: 80%;
+        
     }
 
     #contact #contact-form input,
@@ -94,25 +100,25 @@ section {
 
 .button {
     padding: 1em 2em;
-    border: none;
+    border-color: white;
     border-radius: 5px;
     font-weight: bold;
     letter-spacing: 5px;
     text-transform: uppercase;
     cursor: pointer;
-    color: #2c9caf;
+    color:  #7709c0c4;
     transition: all 1000ms;
     font-size: 15px;
     position: relative;
     overflow: hidden;
-    outline: 2px solid #2c9caf;
+    outline: 2px solid  #7709c0c4;
 }
 
 button:hover {
     color: #ffffff;
     transform: scale(1.1);
-    outline: 2px solid #70bdca;
-    box-shadow: 4px 5px 17px -4px #268391;
+    outline: 2px solid  #7709c0c4;
+    box-shadow: 4px 5px 17px -4px  #7709c0c4;
 }
 
 button::before {
@@ -122,14 +128,16 @@ button::before {
     top: 0;
     width: 0;
     height: 100%;
-    background-color: #2c9caf;
+    background-color:  #7709c0c4;
     transform: skewX(45deg);
     z-index: -1;
     transition: width 1000ms;
+    border-color: white;
 }
 
 button:hover::before {
     width: 250%;
+    border-color: white;
 }
 
 #home-image {
@@ -145,41 +153,97 @@ button:hover::before {
 }
 
 #contact #contact-form {
-    background-color:white;
+    background: linear-gradient(10deg ,white, #410966c4, #530c83c4,#8018c5c4,#7709c0c4 ,white );
     height: 400px;
     width: 50%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
    
 }
-#contact #contact-form form{
+#contact #contact-form form {
     visibility: hidden;
-}
-#contact #contact-form:hover {
-    visibility: visible;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    align-items: center;
+}#contact {
+    position: relative;
+}
+
+#contact #contact-form {
+    background: linear-gradient(10deg ,white, #410966c4, #530c83c4, #8018c5c4, #7709c0c4, white);
+    height: 400px;
     width: 50%;
     text-align: center;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+#contact #contact-form form {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    margin: auto;
+    align-items: center;
+}
+
+#contact #contact-form:hover form {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    margin-top: -160px;
+    animation: sections 2s ease;
+}
+
+@keyframes sections {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 #contact #contact-form:hover input,
-#contact #contact-form:hover textarea,#contact #contact-form:hover button {
+#contact #contact-form:hover textarea,
+#contact #contact-form:hover button {
     padding: 10px;
-    margin: 10px 0;
+    margin: 2px 0;
     width: 60%;
     visibility: visible;
+    position: relative;
+    transition: opacity 0.3s ease;
+}
+
+#contact #contact-form h1 {
+    font-size: 70px;
+    position: relative;
+    top: 25%;
+    transition: top 0.3s ease;
+    color: white;
+    text-shadow: 4px 6px #095066c4;
+
 }
 
 #contact #contact-form:hover h1 {
     visibility: hidden;
-}
-#contact #contact-form #heading{
-    font-size: 50px;
-    margin-top: 50px;
+    top: 0;
+    
 }
