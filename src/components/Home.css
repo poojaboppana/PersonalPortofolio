@@ -7,6 +7,82 @@ nav {
     display: flex;
     justify-content: end;
 }
+#projects{
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+}
+#project #project-image{
+    height: 170px;
+   width: 280px;
+   border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#content{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  margin-bottom: 40px;
+ 
+}
+#feedback{
+    text-align: center;
+    position: relative;
+}
+#feedbacks, .button{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+#project h3{
+    text-align: center;
+    background-color: white;
+    color: purple;
+    padding: 10px;
+
+}
+
+
+#project h4{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#project {
+    height: 350px;
+    width: 280px;
+    padding-bottom: 10px;
+    background-color: rgba(55, 33, 85, 0.76);
+    border-radius: 20px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    animation: movesection 9s infinite;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-origin: center;
+    position: relative;
+    overflow: visible;
+}
+#project:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgb(26, 2, 34);
+    background-color: rgba(199, 186, 218, 0.959);
+    color: black;
+}
+@keyframes movesection {
+    0% {
+        transform: translateX(0%); 
+    }
+  50%{
+    transform: translateX(100%);
+  }
+    100% {
+        transform: translateX(0%); 
+    }
+}
 
 ul {
     display: flex;
@@ -98,7 +174,7 @@ section {
     }
 }
 
-.button {
+#contact-button {
     padding: 1em 2em;
     border-color: white;
     border-radius: 5px;
@@ -114,14 +190,14 @@ section {
     outline: 2px solid  #7709c0c4;
 }
 
-button:hover {
+#contact-button:hover {
     color: #ffffff;
     transform: scale(1.1);
     outline: 2px solid  #7709c0c4;
     box-shadow: 4px 5px 17px -4px  #7709c0c4;
 }
 
-button::before {
+#contact-button::before {
     content: "";
     position: absolute;
     left: -50px;
@@ -135,7 +211,7 @@ button::before {
     border-color: white;
 }
 
-button:hover::before {
+#contact-button:hover::before {
     width: 250%;
     border-color: white;
 }
@@ -211,6 +287,16 @@ button:hover::before {
     margin-top: -160px;
     animation: sections 2s ease;
 }
+#feedback .give-feedback {
+    background-color: rgb(61, 3, 61);
+    width: 120px;
+    height: auto;
+    padding: 20px;
+    color: white;
+    border-radius: 30%;
+ cursor: url('../cursor-icon.png')16 16,pointer;
+  
+}
 
 @keyframes sections {
     0% {
@@ -246,4 +332,60 @@ button:hover::before {
     visibility: hidden;
     top: 0;
     
+}
+
+
+.feedback-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .feedback-carousel ul {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    width: auto; 
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+ 
+  .feedback-carousel ul li {
+    flex: 1 0 100px;
+    min-width: 350px;
+    height: auto;
+    text-align: left;
+    padding: 30px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .arrow {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #070000;
+    padding: 0; 
+    margin: 0; 
+    box-shadow: none; 
+    transition: none; 
+    outline: none; 
+}
+
+.arrow:hover {
+    color: #110101;
+    transform: none; /* Disable scale effect */
+}
+
+.arrow:disabled {
+    color: #ccc;
+    cursor: not-allowed;
 }

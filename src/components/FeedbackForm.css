@@ -1,0 +1,39 @@
+#feedback-form{
+    margin-top: 50px;
+    background-color: #001A6E;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+padding: 20px;
+height: auto;
+border-radius: 7%;
+}
+#feedback-form:hover{
+    box-shadow: 0px 0px 20px rgb(4, 4, 59);
+}
+#feedbackCom h1{
+  text-align: center;
+  font-size: 50px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  color: wheat;
+}
+#feedback-form input,textarea,button{
+ 
+    width: 450px;
+    padding: 10px;
+   margin-top: 30px;
+}
+#feedback-form button{
+    background-color: #f5abb7;
+    color: black;
+    border-color: white;
+    text-align: center;
+}
+#feedback-form button:hover{
+    background-color: #FFF67E;
+    color: black;
+}
