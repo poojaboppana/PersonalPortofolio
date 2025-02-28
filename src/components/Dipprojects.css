@@ -19,6 +19,7 @@ h1{
     transform-origin: center;
     position: relative;
     overflow: visible;
+    margin-top: 50px;
 }
 #dipproject h3{
     text-align: center;
@@ -41,6 +42,7 @@ h1{
     width: 100%;
     background-color: rgba(26, 4, 48, 0.863);
     margin-top: 0px;
+    height: 100vh;
 }
 #dipproject #projectimage{
     height: 200px;

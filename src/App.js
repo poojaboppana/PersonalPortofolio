@@ -4,6 +4,7 @@ import Msdprojects from "./components/Msdprojects";
 import Dipprojects from "./components/Dipprojects";
 import Dmtprojects from "./components/Dmtprojects";
 import FeedbackForm from "./components/FeedbackForm";
+import About from "./components/About";
 import React, { useState } from "react";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           path="/"
           element={<Home feedbacks={feedbacks} />}
         />
+        <Route path="/About" element={<About />} />
         <Route path="/Msdprojects" element={<Msdprojects />} />
         <Route path="/Dipprojects" element={<Dipprojects />} />
         <Route path="/Dmtprojects" element={<Dmtprojects />} />
