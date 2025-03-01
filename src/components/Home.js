@@ -195,7 +195,7 @@ function Home() {
           method="POST"
           onSubmit={handleSubmit}
         >
-          <input type="text" id="name" placeholder="Enter your name" name="name" required />
+          <input type="text" id="names" placeholder="Enter your name" name="name" required />
           <br />
           <input type="email" id="email" placeholder="Enter your Email" name="email" required />
           <br />

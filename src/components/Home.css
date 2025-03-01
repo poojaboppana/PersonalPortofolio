@@ -881,9 +881,9 @@ margin-left: 33%;
         width: 90%;
       
        }
-       #contact #contact-form #name{
-         margin-top: 17%;
-    }
+       #contact #contact-form:hover #names{
+        margin-top: 16%;
+       }
   }
   @media (max-width: 1000px) {
   #contact #contact-form #name{
