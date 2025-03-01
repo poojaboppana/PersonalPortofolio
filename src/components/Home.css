@@ -2,14 +2,23 @@
     color: white;
     width: 100%;
 }
-body{
-    width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden; 
+  font-family: Arial, sans-serif;
 }
 nav {
     background-color: rgba(61, 8, 63, 0.774);
     display: flex;
     justify-content: end;
     padding: 20px;
+    width: 100%;
 }
 #icons1{
     display: flex;
@@ -205,6 +214,7 @@ h2{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     transform-origin: center;
     position: relative;
+    overflow: hidden;
     overflow: visible;
 }
 #project:hover{
@@ -705,6 +715,7 @@ margin-left: 33%;
     color: white;
     text-align: center;
     padding: 30px 20px;
+    
   }
   
   .container {
@@ -730,10 +741,12 @@ margin-left: 33%;
     justify-content: center;
     gap: 20px;
     margin-top: 15px;
+    text-align: center;
   }
   
   .footer-links li {
     display: inline;
+  
   }
   
   .footer-links a {
@@ -778,7 +791,10 @@ margin-left: 33%;
   }
   
 /* Mobile (Small Devices) */
-@media (max-width: 500px) {
+@media (max-width: 750px) {
+  .Home{
+    width: 100vw;
+  }
     .nav-links {
         display: none;
         
@@ -791,7 +807,11 @@ margin-left: 33%;
         
         
       }
-     
+     body{
+      font-size: 10px;
+   
+      overflow-x: hidden;
+     }
   
       .nav-links.active {
         display: grid;
@@ -799,6 +819,14 @@ margin-left: 33%;
        grid-template-columns: repeat(2,1fr);
         
       }
+      #icon-resume{
+        align-items: center;
+      }
+    #icon{
+      display: flex;
+      flex-direction: row;
+    margin-left: -35%;
+    }
       .nav-links.active a{
        height: 10px;
         font-size: 16px;
@@ -809,19 +837,44 @@ margin-left: 33%;
          
 }
 
+#about h1{
+  font-size: 14px;
+}
+#about-content #span-item{
+  font-size: 14px;
+}
       #about #about-image{
      display: none;
       }
+      #myJourney img{
+        display: none;
+      }
+      #projects{
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+      }
+      #project{
+        height: auto;
+        margin-bottom: 5%;
+        animation: none;
+       
+      }
+      #project img{
+        display:none;
+       }
+       #about-content{
+        margin-left: auto;
+        margin-right: auto;
+       }
+       #contact #contact-form h1 {
+        position: relative;
+      top:50%;
+        font-size: 30px;
+       }
+
     }
   
   
-  /* Tablet (Medium Devices) */
-  @media (min-width: 481px) and (max-width: 1024px) {
-   
-  }
-  
-  /* Desktop (Large Devices) */
-  @media (min-width: 1025px) {
-   
-  }
+
   

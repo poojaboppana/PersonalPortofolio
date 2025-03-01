@@ -60,7 +60,7 @@ function Home() {
       <section id="about">
         <div id="about-content">
           <h1>
-            Hi, <span>I'm Pooja Boppana!</span>
+            Hi, <span id="span-item">I'm Pooja Boppana!</span>
           </h1>
           <h3>
             A Computer Science student passionate about frontend development and
@@ -105,8 +105,11 @@ function Home() {
             <h2>Projects on</h2>
             <h3>
               <span>Digital Image Processing</span>
-            </h3>
+            </h3>   
           </div>
+
+       
+        
         </Link>
         <Link to="/Msdprojects">
           <div id="project">
@@ -144,7 +147,7 @@ function Home() {
             <div className="timeline-content">
               <h3>1st Year</h3>
               <p>
-                Member of E-cell, Got certificate in Throwball Sport, Learned- C
+                Joined as Member of E-cell, Got certificate in Throwball Sport, Learned- C
                 Language, Python
               </p>
             </div>
@@ -166,8 +169,8 @@ function Home() {
             <div className="timeline-content">
               <h3>3rd Year</h3>
               <p>
-                Participated in Ideathon, Hackathon, Did Internship in Pantech
-                Solutions for Full Stack Development, Learned MERN Stack,
+               Became a Secretary for R&C vertical in Ecell, Participated in Ideathon, Hackathon, Did Internship in Pantech
+                Solutions for Full Stack Development, Learned MERN Stack,Computer Networks,
                 Learning-AWS, Ethical Hacking
               </p>
             </div>
@@ -226,11 +229,12 @@ function Home() {
               <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
-            </li>
-            <li>
               <a href="#myJourney">Journey</a>
             </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+           
           </ul>
 
           <div className="footer-social">
