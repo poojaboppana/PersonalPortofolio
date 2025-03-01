@@ -825,6 +825,10 @@ margin-left: 33%;
       flex-direction: row;
     
     }
+    #icon-resume{
+      position: relative;
+      left: -15%;
+    }
       .nav-links.active a{
        height: 10px;
         font-size: 16px;
