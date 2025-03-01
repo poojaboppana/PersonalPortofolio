@@ -19,6 +19,12 @@ import React, { useState } from "react";
 function Home() {
 
   const [isOpen, setIsOpen] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (event) => {
+    setSubmitted(true); // Show popup
+    setTimeout(() => setSubmitted(false), 3000); // Hide after 3 seconds
+  };
   return (
     <div className="Home">
 
@@ -177,41 +183,33 @@ function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
+      
       <section id="contact">
-        <div id="contact-form">
-          <h1 id="heading">Contact me!!</h1>
-          <form>
-            <input
-              type="text"
-              id="name"
-              placeholder="Enter your name"
-              name="name"
-              required
-            />
-            <br />
-            <input
-              type="email"
-              id="email"
-              placeholder="Enter your Email"
-              name="email"
-              required
-            />
-            <br />
-            <textarea
-              id="message"
-              placeholder="Enter the Message"
-              name="message"
-              required
-            ></textarea>
-            <br />
-            <button id="contact-button" type="submit" className="button">
-              Submit
-            </button>
-          </form>
-        </div>
-      </section>
+      <div id="contact-form">
+        <h1 id="heading">Contact me!!</h1>
+        <form
+          action="https://formsubmit.co/poojaboppana99@gmail.com"
+          method="POST"
+          onSubmit={handleSubmit}
+        >
+          <input type="text" id="name" placeholder="Enter your name" name="name" required />
+          <br />
+          <input type="email" id="email" placeholder="Enter your Email" name="email" required />
+          <br />
+          <textarea id="message" placeholder="Enter the Message" name="message" required></textarea>
+          <br />
+          <button id="contact-button" type="submit" className="button">
+            Submit
+          </button>
+        </form>
 
+        {submitted && (
+          <div className="popup">
+            <p>Message Sent Successfully!</p>
+          </div>
+        )}
+      </div>
+</section>
       {/* Footer */}
       <footer className="footer">
         <div className="container">

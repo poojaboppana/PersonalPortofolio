@@ -773,13 +773,15 @@ margin-left: 33%;
     font-size: 24px;
     cursor: pointer;
     color: white;
+    position: relative;
+    right: 35%;
   }
   
 /* Mobile (Small Devices) */
 @media (max-width: 500px) {
     .nav-links {
         display: none;
-        flex-direction: column;
+        
         background: #290629;
         position: absolute;
         top: 50px;
@@ -787,15 +789,28 @@ margin-left: 33%;
         width: 100%;
         text-align: center;
         
+        
       }
+     
   
       .nav-links.active {
-        display: flex;
-       margin-top: 20px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+       grid-template-columns: repeat(2,1fr);
+        
       }
-    
-      .hamburger {
-        display: block;
+      .nav-links.active a{
+       height: 10px;
+        font-size: 16px;
+        background: none;
+      }
+  .hamburger {
+    display: block;
+         
+}
+
+      #about #about-image{
+     display: none;
       }
     }
   
